@@ -1,0 +1,135 @@
+$serengold: #efd30a;
+$gray: #181818;
+$ttheight: 57px;
+$ttwidth: 120px;
+$ctheight: 55px;
+$ctwidth: 80px;
+
+body {
+    font-family: Consolas, monaco, monospace;
+    color: $serengold;
+    margin: 0;
+}
+
+main {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.ct:last-of-type {
+    &::after {
+        border-right: 1px solid black;
+    }
+}
+
+.ct {
+    background: #181818;
+    border: 1px solid black;
+    border-bottom: 1px solid $serengold;
+    border-right: 1px solid $serengold;
+    height: $ctheight;
+
+    &::after {
+        border-right: 1px solid black;
+        width: 95px;
+        min-height: calc($ctheight + 12px);
+    }
+
+    > .j {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.ct, .tt {
+    &::after {
+        content: '';
+        background: #282828;
+        position: absolute;
+        z-index: -1;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+}
+
+.tt {
+    display: flex;
+    background: #282828;
+    height: $ttheight;
+
+    > .t {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 5px;
+        border-bottom: 1px solid $serengold;
+    }
+
+    > .d {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    &::after {
+        border-right: 1px solid black;
+        width: calc($ttwidth + 10px);
+        min-height: calc($ttheight + 10px);
+    }
+}
+
+.header {
+    display: flex;
+
+    > .tt, .ct {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+
+    > .tt {
+        flex: 1 0 $ttwidth;
+        max-width: $ttwidth;
+    }
+
+    > .ct {
+        flex: 1 0 $ctwidth;
+        max-width: $ctwidth;
+    }
+}
+
+.ic {
+    fill: $serengold;
+}
+
+.-m {
+    font-weight: 700;
+}
+
+.-pls {
+    padding-left: 5px;
+}
+
+.-fs18{
+    font-size: 18px;
+}
+
+.-fs20{
+    font-size: 20px;
+}
+
+.-fs22{
+    font-size: 22px;
+}
+
+.-fsh0 {
+    flex-shrink: 0;
+}
