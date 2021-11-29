@@ -21,12 +21,12 @@ const createConfig = (theme) => ({
 
     entry: {
         // Main entry point of our app
-        [theme]: resolve(__dirname, 'src', 'index.js'),
+        [theme]: resolve(__dirname, 'test', 'index.js'),
     },
 
     output: {
         // As mentioned before, built files are stored in docs
-        path: resolve(__dirname, 'docs'),
+        path: resolve(__dirname, 'dump'),
 
         // In our case we serve assets directly from root
         publicPath: isProd ? 'https://kuraimaiko.github.io/oyasumi/' : '/',
@@ -41,7 +41,7 @@ const createConfig = (theme) => ({
             Modules: resolve(__dirname, 'src', 'modules'),
             Transformers: resolve(__dirname, 'src', 'transformers'),
             Components: resolve(__dirname, 'src', 'components'),
-            Contexts: resolve(__dirname, 'src', 'contexts'),
+            Contexts: resolve(__dirname, 'test', 'contexts'),
             Utils: resolve(__dirname, 'src', 'utils'),
             Sprites: resolve(__dirname, 'src', 'sprites', 'svg'),
             Styles: resolve(__dirname, 'src', 'styles', theme),
@@ -89,7 +89,7 @@ const createConfig = (theme) => ({
     plugins: [
         new HtmlWebpackPlugin({
             filename: `${theme === themes[0].toLowerCase() ? 'index' : theme}.html`,
-            title: `Oyasumi ${theme}`,
+            title: `Oyasumi ${theme} (Test)`,
         }),
         new Dotenv({ path: './.env' }),
         new SpriteLoaderPlugin({

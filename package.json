@@ -42,6 +42,8 @@
   "scripts": {
     "dev": "webpack-dev-server --hot --inline --config webpack.config.js",
     "build": "rimraf ./docs && NODE_ENV=production webpack --config webpack.config.js",
+    "test": "rimraf ./dump && NODE_ENV=production webpack --config webpack.test.config.js",
+    "test:dev": "webpack-dev-server --hot --inline --config webpack.test.config.js",
     "lint": "yarn lint:js && yarn lint:css",
     "lint:js": "yarn eslint ./",
     "lint:css": "yarn stylelint ./src/styles/**"

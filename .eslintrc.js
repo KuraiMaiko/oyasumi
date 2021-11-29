@@ -163,7 +163,7 @@ module.exports = {
         'func-style': [2, 'expression'],
         'function-paren-newline': [2, 'consistent'],
         'import/exports-last': 2,
-        'import/extensions': [2, 'never', { svg: 'always', worker: 'always', json: 'always' }],
+        'import/extensions': [2, 'never', { svg: 'always', worker: 'always', json: 'always', scss: 'always' }],
         'import/no-self-import': 2,
         'import/no-unused-modules': 2,
         'import/no-useless-path-segments': 2,
