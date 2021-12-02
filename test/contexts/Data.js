@@ -17,14 +17,14 @@ export const DataContextProvider = ({ children }) => {
         setInCombatState(true);
         setCombatState({ time: '08:20', rdps: '128K' });
         setCombatantsState([
-            { job: 'mch', dps: '24.22k', name: 'S.C.' },
-            { job: 'mch', dps: '24.22k', name: 'S.C.' },
-            { job: 'mch', dps: '24.22k', name: 'S.C.' },
-            { job: 'mch', dps: '24.22k', name: 'S.C.' },
-            { job: 'mch', dps: '24.22k', name: 'S.C.' },
-            { job: 'mch', dps: '24.22k', name: 'S.C.' },
-            { job: 'mch', dps: '24.22k', name: 'S.C.' },
-            { job: 'mch', dps: '24.22k', name: 'S.C.' },
+            { job: 'sam', dps: '31.1k', name: 'M. S.' },
+            { job: 'blm', dps: '28.75k', name: 'F. N.' },
+            { job: 'rdm', dps: '24.23k', name: 'E. B.' },
+            { job: 'mch', dps: '24.22k', name: 'S. C.' },
+            { job: 'war', dps: '14.51k', name: 'H. G.' },
+            { job: 'drk', dps: '12.90k', name: 'E. U.' },
+            { job: 'ast', dps: '11.11k', name: 'A. P.' },
+            { job: 'sch', dps: '10.42k', name: 'C. B.' },
         ]);
     }, []);
 
