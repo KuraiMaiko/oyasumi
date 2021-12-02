@@ -1,4 +1,3 @@
-$gray: #181818;
 $ttheight: 57px;
 $ttwidth: 120px;
 $ctheight: 55px;
@@ -6,7 +5,7 @@ $ctwidth: 80px;
 
 body {
     font-family: Consolas, monaco, monospace;
-    color: $theme;
+    color: $theme_primary_color;
     margin: 0;
 }
 
@@ -19,19 +18,19 @@ main {
 
 .ct:last-of-type {
     &::after {
-        border-right: 1px solid black;
+        border-right: 1px solid $theme_default_border_color;
     }
 }
 
 .ct {
-    background: #181818;
-    border: 1px solid black;
-    border-bottom: 1px solid $theme;
-    border-right: 1px solid $theme;
+    background: $theme_tertiary_color;
+    border: 1px solid $theme_default_border_color;
+    border-bottom: 1px solid $theme_primary_color;
+    border-right: 1px solid $theme_primary_color;
     height: $ctheight;
 
     &::after {
-        border-right: 1px solid black;
+        border-right: 1px solid $theme_default_border_color;
         width: 95px;
         min-height: calc($ctheight + 12px);
     }
@@ -45,17 +44,17 @@ main {
 .ct, .tt {
     &::after {
         content: '';
-        background: #282828;
+        background: $theme_secondary_color;
         position: absolute;
         z-index: -1;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        border-top: 1px solid $theme_default_border_color;
+        border-bottom: 1px solid $theme_default_border_color;
     }
 }
 
 .tt {
     display: flex;
-    background: #282828;
+    background: $theme_secondary_color;
     height: $ttheight;
 
     > .t {
@@ -64,7 +63,7 @@ main {
         font-size: 18px;
         font-weight: 700;
         padding: 5px;
-        border-bottom: 1px solid $theme;
+        border-bottom: 1px solid $theme_primary_color;
     }
 
     > .d {
@@ -73,7 +72,7 @@ main {
     }
 
     &::after {
-        border-left: 1px solid black;
+        border-left: 1px solid $theme_default_border_color;
         width: calc($ttwidth + 10px);
         min-height: calc($ttheight + 10px);
     }
@@ -106,7 +105,7 @@ main {
 }
 
 .ic {
-    fill: $theme;
+    fill: $theme_primary_color;
 }
 
 .-m {

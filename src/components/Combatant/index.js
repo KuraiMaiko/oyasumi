@@ -15,7 +15,7 @@ const jobs = [
     'dnc',
     'drg',
     'drk',
-    'gld',
+    'gla',
     'gnb',
     'lnc',
     'mch',

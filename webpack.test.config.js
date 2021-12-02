@@ -7,7 +7,7 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 const { resolve } = require('path');
 
-const themes = ['Serenaya', 'Rui', 'Maiko'];
+const themes = ['Serenaya', 'Rui', 'Maiko', 'Classic', 'Asuka', 'Shinji'];
 
 /**
  * @param {sting} theme
