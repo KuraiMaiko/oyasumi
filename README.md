@@ -8,26 +8,26 @@ https://kuraimaiko.github.io/oyasumi/?ws=ws://127.0.0.1:10501/ws
 
 ## Serenaya (The current default theme)
 https://kuraimaiko.github.io/oyasumi/?ws=ws://127.0.0.1:10501/ws
-![Classic](/screenshots/serenaya.jpg)
+![Classic](/screenshots/serenaya.png)
 
 ## Rui
 https://kuraimaiko.github.io/oyasumi/rui.html?ws=ws://127.0.0.1:10501/ws
-![Classic](/screenshots/rui.jpg)
+![Classic](/screenshots/rui.png)
 
 ## Maiko
 https://kuraimaiko.github.io/oyasumi/maiko.html?ws=ws://127.0.0.1:10501/ws
-![Classic](/screenshots/maiko.jpg)
+![Classic](/screenshots/maiko.png)
 
 ## Classic
 https://kuraimaiko.github.io/oyasumi/classic.html?ws=ws://127.0.0.1:10501/ws
-![Classic](/screenshots/classic.jpg)
+![Classic](/screenshots/classic.png)
 
 ## Evangelion Themed
 
 ### Asuka
 https://kuraimaiko.github.io/oyasumi/asuka.html?ws=ws://127.0.0.1:10501/ws
-![Classic](/screenshots/asuka.jpg)
+![Classic](/screenshots/asuka.png)
 
 ### Shinji
 https://kuraimaiko.github.io/oyasumi/shinji.html?ws=ws://127.0.0.1:10501/ws
-![Classic](/screenshots/shinji.jpg)
+![Classic](/screenshots/shinji.png)
