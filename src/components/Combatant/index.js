@@ -23,7 +23,7 @@ const jobs = [
     'mrd',
     'nin',
     'pld',
-    'pug',
+    'pgl',
     'rdm',
     'rog',
     'rpr',
