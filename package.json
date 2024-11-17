@@ -1,4 +1,13 @@
 {
+  "scripts": {
+    "build": "rimraf ./docs && NODE_ENV=production webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --hot --inline --config webpack.config.js",
+    "lint": "yarn lint:js && yarn lint:css",
+    "lint:css": "yarn stylelint ./src/styles/**",
+    "lint:js": "yarn eslint ./",
+    "test": "rimraf ./dump && NODE_ENV=production webpack --config webpack.test.config.js",
+    "test:dev": "webpack-dev-server --hot --inline --config webpack.test.config.js"
+  },
   "dependencies": {
     "@babel/core": "^7.11.1",
     "@babel/eslint-parser": "^7.16.3",
@@ -38,14 +47,5 @@
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "webpack-cli": "^3.3.12"
-  },
-  "scripts": {
-    "dev": "webpack-dev-server --hot --inline --config webpack.config.js",
-    "build": "rimraf ./docs && NODE_ENV=production webpack --config webpack.config.js",
-    "test": "rimraf ./dump && NODE_ENV=production webpack --config webpack.test.config.js",
-    "test:dev": "webpack-dev-server --hot --inline --config webpack.test.config.js",
-    "lint": "yarn lint:js && yarn lint:css",
-    "lint:js": "yarn eslint ./",
-    "lint:css": "yarn stylelint ./src/styles/**"
   }
 }

@@ -22,6 +22,7 @@ const jobs = [
     'mnk',
     'mrd',
     'nin',
+    'pct',
     'pld',
     'pgl',
     'rdm',
@@ -32,6 +33,7 @@ const jobs = [
     'sge',
     'smn',
     'thm',
+    'vpr',
     'war',
     'whm',
 ];
